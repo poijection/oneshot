@@ -29,8 +29,8 @@ class EndPoints:
     def domain_word(self):
         res = []
         obj = EndPoints()
-        rd_domain = obj.read_file('domains.txt')
-        rd_word = obj.read_file('words.txt')
+        rd_domain = obj.read_file('domains.txt') # takes domain list from domains.txt file
+        rd_word = obj.read_file('words.txt') # takes words list from words.txt file
         for domain in rd_domain:
             for word in rd_word:
                 res.append(f'{domain}/{word}')
